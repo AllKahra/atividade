@@ -1,0 +1,7 @@
+T1018 - Remote System Discovery
+• Simule varredura de rede local usando nmap
+----------------------------------------------------------
+Neste exercício, foi realizada a simulação da técnica T1018 do framework MITRE ATT&CK, chamada Remote System Discovery. Essa técnica é usada para identificar quais dispositivos estão ativos em uma rede local. Para isso, foi utilizado um script em Python que executa o comando nmap -sn -n 172.16.43.0/24. Esse comando faz uma varredura na rede e mostra quais máquinas estão ligadas e respondendo. A opção -sn serve para verificar apenas se os dispositivos estão ativos sem escanear portas. A opção -n impede que o Nmap tente resolver nomes de domínio, o que torna a execução mais rápida. O script coleta os resultados e exibe os IPs encontrados. Com isso, é possível identificar os dispositivos ativos na rede, o que é útil tanto para administradores quanto para testes de segurança. Além disso, nem todos os dispositivos vão responder à varredura, pois alguns podem estar protegidos por firewall.
+----------------------------------------------------------
+Referências:
+https://attack.mitre.org/techniques/T1018/
